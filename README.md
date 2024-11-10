@@ -1,9 +1,6 @@
 
-# Exactly Stacking Contracts contest details
+# Exactly Stacking Contracts
 
-- Join [Sherlock Discord](https://discord.gg/MABEWyASkp)
-- Submit findings using the issue page in your private contest repo (label issues as med or high)
-- [Read for more details](https://docs.sherlock.xyz/audits/watsons)
 
 # Q&A
 
@@ -59,34 +56,7 @@ ___
 n/a
 ___
 
-### Q: Please provide links to previous audits (if any).
-https://github.com/exactly/audits
-___
-
 ### Q: Please list any relevant protocol resources.
 https://docs.exact.ly
 ___
-
-### Q: Additional audit information.
-Key features:
-* Distribution of protocol fees: The fees collected from loans will be partly allocated to the Staking Program. A specified fraction (θ) of these fees will be assigned to the staking pool, with a further division between the dividend subprogram and the liquidity provider staking subprogram. This ensures a balanced and fair distribution of rewards.
-* Dividend module: Users who stake their EXA tokens will receive dividends based on the staking duration. The dividend index updates regularly, ensuring that participants who stake for longer periods receive proportional rewards. This module supports multiple assets, although a single-asset approach can simplify the dividend distribution.
-* Penalty function for early withdrawals: The program will incorporate a penalty function to encourage longer staking periods. Early withdrawals within a predefined minimum period (Tmin) will incur penalties, reducing the dividends awarded. This mechanism helps maintain the stability and longevity of the staking pool.
-* Enhanced voting power: Stakers will gain additional voting power, directly influencing protocol decisions. The voting power increases with the staking duration, incentivizing users to stake for extended periods.
-* Extra rewards: Aside from dividends, stakes will earn additional rewards in other tokens, providing further incentives for long-term participation.
-___
-
-
-
-# Audit scope
-
-
-[protocol @ 0872c11bc7fc6bcdbe630f072c688a448beacbe0](https://github.com/exactly/protocol/tree/0872c11bc7fc6bcdbe630f072c688a448beacbe0)
-- [protocol/contracts/Auditor.sol](protocol/contracts/Auditor.sol)
-- [protocol/contracts/InterestRateModel.sol](protocol/contracts/InterestRateModel.sol)
-- [protocol/contracts/Market.sol](protocol/contracts/Market.sol)
-- [protocol/contracts/RewardsController.sol](protocol/contracts/RewardsController.sol)
-- [protocol/contracts/StakedEXA.sol](protocol/contracts/StakedEXA.sol)
-- [protocol/contracts/utils/FixedLib.sol](protocol/contracts/utils/FixedLib.sol)
-
 
